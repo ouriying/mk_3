@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/mk.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--<script src="js/mk.js" type="text/javascript"></script>-->
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body >
+			<!--头部黑条-->
+		<script type="text/javascript">
+		$(function(){ 
+		   $(".head2").hide();
+	       $(".plus").click(function(){
+		   $(".head2").slideDown();
+		    $(".head1").hide();
+	   });
+	        $(".colse").click(function(){
+	        	$(".head2").slideUp(200);
+	        	$(".head1").show();
+	        	
+	        })
+	        
+           })
+		</script>
+	<!--联系我们-->
+		<script type="text/javascript">
+            $(function(){
+            	$(".contact-us").hover(function(){
+            		$(".contact-hover").slideDown();
+            		
+            	},function(){
+            		$(".contact-hover").slideUp();
+            	})
+            })
+
+		</script>
+		<!--购物袋-->
+		<script type="text/javascript">
+            $(function(){
+            	$(".shopping-bag").hover(function(){
+            		$(".shopping-cart").slideDown();
+            		
+            	},function(){
+            		$(".shopping-cart").slideUp();
+            	})
+            })
+
+		</script>
+		<!--登录-->
+		<script type="text/javascript">
+            $(function(){
+            	$(".login").hover(function(){
+            		$(".login-mado").slideDown();
+            		
+            	},function(){
+            		$(".login-mado").slideUp();
+            	})
+            })
+
+		</script>
+		<script type="text/javascript">
+			$(function(){
+			$(".sou").click(function(){
+				$(this).animate({
+					width:"300px"	
+			},3000)
+					
+			})
+			$(".login").click(function(){
+				$(".sou").animate({
+					width:"160px"	
+			},3000)
+			})
+			})
+		</script>
+		<!--下拉菜单-->
+		<script type="text/javascript">
+			$(function(){
+				
+				$(".dropdown1,.dropdown-menu1").mouseover(function(){
+					$(".dropdown-menu1").show();
+				})
+					
+				$(".dropdown1,.dropdown-menu1").mouseout(function(){
+					$(".dropdown-menu1").hide();
+				})
+				
+			})
+			</script>
+			<script type="text/javascript">
+            $(function(){
+			
+				$(".dropdown2,.dropdown-menu2").mouseover(function(){
+					$(".dropdown-menu2").show();
+				})
+					
+				$(".dropdown2,.dropdown-menu2").mouseout(function(){
+					$(".dropdown-menu2").hide();
+				})
+				
+			})
+            </script>
+            <script type="text/javascript">
+            $(function(){
+				
+				$(".dropdown3,.dropdown-menu3").mouseover(function(){
+					$(".dropdown-menu3").show();
+				})
+					
+				$(".dropdown3,.dropdown-menu3").mouseout(function(){
+					$(".dropdown-menu3").hide();
+				})
+				
+			})
+            </script>
+           <script type="text/javascript">
+            $(function(){
+				
+				$(".dropdown4,.dropdown-menu4").mouseover(function(){
+					$(".dropdown-menu4").show();
+				})
+					
+				$(".dropdown4,.dropdown-menu4").mouseout(function(){
+					$(".dropdown-menu4").hide();
+				})
+				
+			})
+            </script>
+             <script type="text/javascript">
+            $(function(){
+				
+				$(".dropdown5,.dropdown-menu5").mouseover(function(){
+					$(".dropdown-menu5").show();
+				})
+					
+				$(".dropdown5,.dropdown-menu5").mouseout(function(){
+					$(".dropdown-menu5").hide();
+				})
+				
+			})
+            </script>
+             <script type="text/javascript">
+            $(function(){
+				$(".dropdown6,.dropdown-menu6").mouseover(function(){
+					$(".dropdown-menu6").show();
+				})
+					
+				$(".dropdown6,.dropdown-menu6").mouseout(function(){
+					$(".dropdown-menu6").hide();
+				})
+				
+			})
+            </script>
+             <script type="text/javascript">
+            $(function(){
+				
+				$(".dropdown7,.dropdown-menu7").mouseover(function(){
+					$(".dropdown-menu7").show();
+				})
+					
+				$(".dropdown7,.dropdown-menu7").mouseout(function(){
+					$(".dropdown-menu7").hide();
+				})
+				
+			})
+            </script>
+             <script type="text/javascript">
+			$(function(){
+				
+				$(".dropdown8,.dropdown-menu8").mouseover(function(){
+					$(".dropdown-menu8").show();
+				})
+					
+				$(".dropdown8,.dropdown-menu8").mouseout(function(){
+					$(".dropdown-menu8").hide();
+				})
+				
+			})
+		</script>
+	
+     <!--  导航栏的滚动固定-->
+       <script type="text/javascript">	
+       	      
+				$(window).scroll(function(){
+					var h=$(this).scrollTop();
+					if(h>=38){
+					    $(".head1").hide();
+						$(".big-korc").css("margin-top","-25px");
+						
+					    $(".big-korc img").css("height","20px");
+					    
+						
+					}else{
+						$(".big-korc").css("margin-top","0px");
+					     $(".head1").show();
+					     $(".big-korc img").css("height","24px");
+					}
+			});
+  </script>
+  <!--1380px时改变container的边界-->
+  <script type="text/javascript">
+		$(function(){ 
+		   $(".video .container,.recomend .container,.contact .container,.head-img .container,.nav-divider .container").addClass("video-map");
+	  });	          
+		</script>
+		<!--左边栏东西的显示和隐藏-->
+		<script type="text/javascript">
+		$(function(){
+			$(".color-plus").click(function(){
+			$(".color-1").show();
+				$(".color-plus").hide();
+				$(".color-jian").show();
+		})
+			$(".color-jian").click(function(){	
+				$(".color-1").hide();
+				
+				$(".color-jian").hide();
+				$(".color-plus").show();
+			
+		})
+		})
+		$(function(){
+			$(".size-jian").click(function(){
+			$(".size-1").hide();
+				$(".size-jian").hide();
+				$(".size-plus").show();
+		})
+			$(".size-plus").click(function(){	
+				$(".size-1").show();
+				
+				$(".size-jian").show();
+				$(".size-plus").hide();
+		})
+		})
+		$(function(){
+			$(".price-jian").click(function(){
+				$(".price-1").hide();
+				
+				$(".price-jian").hide();
+				$(".price-plus").show();
+			})
+			$(".price-plus").click(function(){
+			$(".price-1").show();
+				$(".price-plus").hide();
+				$(".price-jian").show();
+		
+			
+		})
+		})
+		</script>
+		<!--尾部-->
+		<script type="text/javascript">
+		$(function(){
+			$(".account-plus").click(function(){
+				$(".account-context").show();
+				$(".account-plus").hide();
+				$(".account-jian").show();
+		
+			$(".account-jian").click(function(){	
+				$(".account-context").hide();
+				
+				$(".account-jian").hide();
+				$(".account-plus").show();
+			})
+		})
+			})
+		</script>
+    <script type="text/javascript">
+		$(function(){
+			$(".about-plus").click(function(){
+			$(".about-context").show();
+				$(".about-plus").hide();
+				$(".about-jian").show();
+		
+			$(".about-jian").click(function(){	
+				$(".about-context").hide();
+				
+				$(".about-jian").hide();
+				$(".about-plus").show();
+			})
+		})
+		})
+		</script>
+		<script type="text/javascript">
+		$(function(){
+			$(".serive-plus").click(function(){
+			$(".serive-context").show();
+				$(".serive-plus").hide();
+				$(".serive-jian").show();
+		
+			$(".serive-jian").click(function(){	
+				$(".serive-context").hide();
+				
+				$(".serive-jian").hide();
+				$(".serive-plus").show();
+			})
+		})
+		})
+		</script>
+		<div class="head2">
+			<p>夏季酬宾，现已开始。</p>
+			<p>低至五折优惠，更享免费配送。</p>
+			<a hrfe="">查看详细&gt;</a>
+			<span class="pull-right colse">x</span>
+		</div>
+		<div class="head1"><p>夏季酬宾，现已开始。<a hrfe="">查看详细&gt;</a></p>
+			<span class="pull-right plus">+</span>
+		</div>
+	<div class="head" style="background:white;z-index:999;width: 100%;" data-spy="affix" data-offset-top="25">
+    <div class="collapse navbar-collapse">
+	<div class="contact">
+		<div class="container">
+		<li class="glyphicon glyphicon-map-marker pull-left">精品店指南</li>
+		<li class=" pull-left contact-us">
+			<a class="glyphicon glyphicon-earphone" href="">联系我们</a>
+		<div class="contact-hover">
+			<div style="margin-top:30px;text-align: center;"><h5 style="font-size:16px!important;">如果您有任何疑问与建议，敬请联系</h5>
+			</div>
+			<div style="margin-left:60px;">
+				<a href=""style="display:block;width:200px;height:35px;padding-top:8px;text-align:center;background:black;">联系MK在线时尚顾问</a>
+			</div>
+				<img style="margin-left:35px"src="img/contact-hover.png">
+				<div ><p style="padding-top:15px;padding-left:20px;font-size: 18px;">您也可以</p>
+					<div class="col-lg-1"><img  src="img/soamiao.png"></div>
+					<div class="col-lg-5" style="margin-left:20px"><p>MICHAEL KORS</p><p>官方微信公众号</p><p>联系时尚顾问</p></div>
+				</div>
+				<div class="col-lg-5" style=" margin-top:-10px;margin-left:-20px;"><img src="img/ma.png"></div>
+		</div>
+		</li>
+		<li class="pull-right search" style="margin-right:6%"><input class="sou"  type="text"  value="搜索"/>
+		<i class=" glyphicon glyphicon-search  search-icon" ></i></li>
+		<li class="glyphicon glyphicon-shopping-cart pull-right shopping-bag">购物袋
+		<div class="shopping-cart pull-right">
+				<div>
+				<legend>购物袋</legend>
+				<label>您的购物袋里有0件商品</label>
+				<button type="enroll" class="btn btn-default">查看购物袋</button>	
+				</div>
+	 </div>
+     </li>
+		<li class="pull-right"> | 注册</li>
+		<li class="glyphicon glyphicon-user pull-right login"> 登录
+		<div class="login-mado pull-right">
+			<form>
+					<fieldset>
+				    <legend>登录</legend>
+				<div class="form-group">
+					<label>手机号码</label>
+					<input type="email" class="form-control" placeholder="请输入您的手机号码" />
+					</div>
+					<div class="form-group">
+					<label>密码</label>
+					<input type="password" class="form-control" placeholder="请输入密码" />
+				</div>
+				<div class="checkbox">
+						<label><input type="checkbox"/>记住我</label>
+						<label class="forgetPassword"><a href="https://www.michaelkors.cn/member/forgetpassword" class="black pull-right" style="text-decoration: underline;">忘记密码？</a>
+						</label>
+				</div>
+						<button type="login" class="btn btn-black">登录</button>
+						<p class="huiyuan">还不是会员？</p>
+						<button type="enroll" class="btn btn-default">注册</button>
+					</fieldset>
+			</form>
+		</div>	
+		</li>	
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript">
+	$(function(){
+		$(".hamburger").click(function(){
+			$(".hamburger").hide();
+			$(".remove").show();
+			$(".remove").click(function(){
+			$(".remove").hide();
+			$(".hamburger").show();
+			})
+		})
+		})
+	</script>
+	<script type="text/javascript">
+      $(function(){
+      	$(".hangbag1").hide();
+      	$(".hangbag").mouseover(function(){
+      		$(".hangbag").hide();
+      		$(".hangbag2").hide();
+      		$(".hangbag1").show();
+      	})
+      	$(".hangbag1").mouseout(function(){
+      		$(".hangbag").show();
+      		$(".hangbag1").hide();
+      		$(".hangbag2").hide();
+      	})
+      })
+
+	  </script>
+	   <script type="text/javascript">
+      $(function(){
+      	$(".hangbag1").hide();
+      	$(".hangbag2").mouseover(function(){
+      		$(".hangbag2").hide();
+      		$(".hangbag").hide();
+      		$(".hangbag1").show();
+      	})
+      	$(".hangbag2").mouseout(function(){
+      		$(".hangbag").show();
+      		$(".hangbag2").hide();
+      		$(".hangbag1").hide();
+      	})
+      })
+
+	  </script>
+	  <script type="text/javascript">
+	   	   	    	$(function(){
+	   	   	    		$(".hangbag2").hide();
+	   	   	    		$(".hangbag").show();
+	   	   	    		$(".btn1").click(function(){
+	   	   	    			$(".hangbag").show();
+	   	   	    			$(".hangbag2").hide();
+	   	   	    		})
+	   	   	    	$(".btn2").click(function(){
+	   	   	    			$(".hangbag").hide();
+	   	   	    			$(".hangbag2").show();
+	   	   	    		})
+	   	   	    	})
+	   	   	    </script>
+	<nav class="navbar">
+            <div class="container">
+                <div >
+                    <span class="collapsed navbar-toggle pull-left" data-toggle="collapse" data-target="#head-navbar" > 
+                     <span class="glyphicon glyphicon-menu-hamburger hamburger"></span>
+                     <span class="remove"style="display:none;font-weight: 800!important;font-size: 20px!important;">X</span>
+                    </span>  
+                  <div class="big-korc"><img src="img/big-korc.png"/></div>  
+                  <span style="margin-top:-25px;margin-right:-10px"class="navbar-toggle glyphicon glyphicon-lock"></span>
+                  <span style="margin-top:-25px;margin-right:-10px" class="navbar-toggle glyphicon glyphicon-search"></span>
+                </div>
+          
+	</script>
+	<nav class="collapse navbar-collapse"  id="head-navbar" >
+		<div class="head-nav">
+		<!--<div class="container">	-->
+		<ul class="nav navbar-nav">
+			<li class="dropdown1"><a href=""  ><strong>WOMEN |</strong> 女士</a><a class="navbar-toggle left-pointer"  href="">&gt;</a></li>
+			<li class="dropdown2"><a href=""><strong>MEN </strong>| 男士</a><a class="navbar-toggle left-pointer" href="">&gt;</a></li>
+			<li class="dropdown3"><a href="">手袋</a><a class="navbar-toggle left-pointer" href="">&gt;</a></li>
+            <li class="dropdown4"><a href="">鞋履</a><a class="navbar-toggle left-pointer" href="">&gt;</a></li>
+            <li class="dropdown5"><a href="">配饰</a><a class="navbar-toggle left-pointer" href="">&gt;</a></li>   
+			<li class="dropdown6"><a href="">腕表</a><a class="navbar-toggle left-pointer" href="">&gt;</a></li>
+			<li class="dropdown7"><a href="">礼品</a><a class="navbar-toggle left-pointer" href="">&gt;</a></li>
+            <li class="dropdown8"><a href=""><strong>SALE </strong>| 优惠</a><a class="navbar-toggle left-pointer" href="">&gt;</a></li>
+                   <!--      含导航三-->
+            <li class="dropdown9"><a style="color:burlywood; letter-spacing: 1px;">DESTIATION KORS</a><a class="navbar-toggle left-pointer" href="">&gt;</a></li>  
+		    <li class="glyphicon glyphicon-user log"><a href="">登录   | 注册</a></li>	
+		    <li class="glyphicon glyphicon-map-marker log"><a href="">精品店指南</a></li>
+		    <li class="glyphicon glyphicon-headphones log"><a href="">联系我们</a></li>
+		</ul>
+		</div>
+		</div>
+	</nav>
+	
+	<div class="head-text">
+	<nav class="dropdown-menu1 ">
+		          <ul class="col-lg-2 col-md-2"></ul>
+			      <ul class="col-lg-2 col-md-2 col-sm-3">
+					<li>甄选系列</li>
+					<li><a href="">新品上市</a></li>
+					<li><a href="">甜美海蓝</a></li>
+					<li><a href=""><strong>MERCER</strong>系列手袋</a></li>
+					<li><a href=""><strong>CUSTOM KORS</strong>定制系列</a></li>
+					<li><a href=""><strong>KORS STYLE</strong>单品推荐</a></li>
+                  </ul>
+                  <ul class="col-lg-2 col-md-2 col-sm-3">
+                  	<li>品类</li>
+                  	<li><a href="">查看全部</a></li>
+                  	<li><a href="">服饰</a></li>
+                  	<li><a href="">手袋</a></li>
+                  	<li><a href="">鞋履</a></li>
+                  	<li><a href="">腕表</a></li>
+                  </ul>
+                  <ul class="col-lg-2 col-md-2 col-sm-3">
+                  	<li>配饰</li>
+                  	<li><a href=""><strong>MICHAEL KORS COLLECTION</strong></a></li>
+                  </ul>
+                  <ul class="col-lg-2 col-md-2 col-sm-3">
+                  	<li>畅销推荐</li>
+                  	<img style="width:130%"src="img/lady-sale-well.jpg"/>
+                  </ul>
+                 <ul class="col-lg-2 col-md-2"></ul>
+    </nav>	
+    
+    <nav class="dropdown-menu2">
+    	         <ul class="col-lg-1 col-md-1"></ul>
+				<ul class="col-lg-3 col-md-3 col-sm-4">
+					<li>甄选系列</li>
+					<li><a href="">新品上市</a></li>
+					<li><a href="">星座钱包</a></li>
+					<li><a href=""><strong>POLO</strong>休闲T恤系列</a></li>
+				</ul>
+				<ul class="col-lg-3 col-md-3 col-sm-4">
+					<li>品类</li>
+					<li><a href="">查看全部</a></li>
+					<li><a href="">手袋</a></li>
+					<li><a href="">配饰</a></li>
+					<li><a href="">服饰</a></li>
+				</ul>
+				<ul class="col-lg-3 col-md-3 col-sm-4">
+                  	<li>畅销推荐</li>
+                  	<img src="img/man-sale-well.jpg"/>
+                </ul>
+                 <ul class="col-lg-2 col-md-2"></ul>
+    </nav>
+    <nav class="dropdown-menu3">
+    	        <ul class="col-lg-1 col-md-1"></ul>
+				<ul class="col-lg-3 col-md3 col-sm-4">
+					<li>甄选系列</li>
+					<li><a href="">丝巾组合</a></li>
+					<li><a href=""><strong>MERCER</strong>系列手袋</a></li>
+					<li><a href=""><strong>SCOUT</strong>相机包系列</a></li>
+					<li><a href=""><strong>CUSTOM KORS</strong>定制系列</a></li>
+				</ul>
+				<ul class="col-lg-3 col-md-3 col-sm-4">
+					<li>品类</li>
+					<li><a href="">查看全部</a></li>
+					<li><a href="">托特包</a></li>
+					<li><a href="">手提包</a></li>
+					<li><a href="">单肩包</a></li>
+					<li><a href="">双肩背包</a></li>
+					<li><a href="">斜挎包</a></li>
+					<li><a href="">钱夹</a></li>
+					<li><a href="">小皮件</a></li>
+					<li><a href=""><strong>MICHAEL KORS COLLECTION</strong></a></li>
+				</ul>
+				<ul class="col-lg-3 col-md-3 col-sm-4">
+                  	<li>畅销推荐</li>
+                  	<img src="img/bag-sale-well.jpg"/>
+				</ul>
+				 <ul class="col-lg-2 col-md-2"></ul>
+				</nav>
+				<nav class="dropdown-menu4">
+				<ul class="col-lg-1 col-md-1"></ul>
+                <ul class="col-lg-3 col-md-3 col-sm-4">
+                	<li>甄选系列</li>
+                	<li><a href=""><strong>POPPY</strong>运动鞋履鞋履</a></li>
+                </ul>
+                <ul class="col-lg-3 col-md-3 col-sm-4">
+                	<li>品类</li>
+                	<li><a href="">查看全部</a></li>
+                	<li><a href="">运动鞋</a></li>
+                	<li><a href="">平底鞋</a></li>
+                	<li><a href="">高跟鞋</a></li>
+                	<li><a href="">凉鞋</a></li>
+                </ul>
+                <ul class="col-lg-3 col-md-3 col-sm-4">
+                	<li>畅销推荐</li>
+                	<img src="img/shoes-sale-well.jpg" />
+                </ul>
+                 <ul class="col-lg-2 col-md-2"></ul>
+               </nav>
+               <nav class="dropdown-menu5">
+               	 <ul class="col-lg-1 col-md-1"></ul>
+                <ul class="col-lg-3 col-md-3 col-sm-4">
+                	<li>甄选系列</li>
+                	<li><a href="">甜美小物</a></li>
+                	<li><a href="">缤纷挂饰</a></li>
+                </ul>
+                <ul class="col-lg-3 col-md-3 col-sm-4">
+                	<li>品类</li>
+                	<li><a href="">查看全部</a></li>
+                	<li><a href="">香薰</a></li>
+                	<li><a href="">钱夹</a></li>
+                	<li><a href="">小皮件</a></li>
+                </ul>
+                <ul class="col-lg-3 col-md-3 col-sm-4">
+                	<li>畅销推荐</li>
+                	<img src="img/decoration-sale-well.jpg" />
+                </ul>
+                 <ul class="col-lg-2 col-md-2"></ul>
+               </nav>
+               <nav class="dropdown-menu6">
+               	 <ul class="col-lg-1 col-md-1"></ul>
+                <ul class="col-lg-3 col-md-3 col-sm-4">
+                	<li>品类</li>
+                	<li><a href="">查看全部</a></li>
+                	<li><a href="">女士腕表</a></li>
+                </ul>
+                <ul class="col-lg-3 col-md-3 col-sm-4">
+                	<li>畅销推荐</li>
+                	<img src="img/watch-sale-well.jpg" />
+                </ul>
+                 <ul class="col-lg-2 col-md-2"></ul>
+               </nav>
+               <nav class="dropdown-menu7">
+               	 <ul class="col-lg-2 col-md-2"></ul>
+                <ul class="col-lg-4 col-md-4 col-sm-6">
+                	<li>品类</li>
+                	<li><a href="">查看全部</a></li>
+                	<li><a href="">女士礼品</a></li>
+                	<li><a href="">男士礼品</a></li>
+                </ul>
+                <ul class="col-lg-4 col-md-4 col-sm-6">
+                	<li>畅销推荐</li>
+                	<img src="img/gift-sale-well.jpg" />
+                </ul>
+                 <ul class="col-lg-2 col-md-2"></ul>
+               </nav>
+               <nav class="dropdown-menu8 ">
+               	 <ul class="col-lg-2 col-md-2"></ul>
+                <ul class="col-lg-4 col-md-4 col-sm-6">
+                	<li>品类</li>
+                	<li><a href="">查看全部</a></li>
+                	<li><a href="">女士</a></li>
+                	<li><a href="">男士</a></li>
+                </ul>
+                <ul class="col-lg-4 col-md-4 col-sm-6">
+                	<li>畅销推荐</li>
+                	<img src="img/discount-sale-well.jpg" />
+                </ul>
+                 <ul class="col-lg-2 col-md-2"></ul>
+               </nav>
+               <nav class="dropdown-menu9">
+                    <ul>
+                	<li><strong>KORS CARES</strong>
+                		<ul>
+                			<li><strong>WATCH HUNGER STOP</strong></li>
+                		</ul>
+                	
+                	</li>
+                	<li>秀场
+                		
+                		<ul>
+                			<li><a href="">天桥风云</a></li>
+                			<li><a href="">LOOKBOOKS</a></li>
+                			<li><a href="">AD CAMPAIGNS</a></li>
+                		</ul>
+                		
+                	</li>
+                	<li><strong>MICHAEL的挚爱</strong>
+                		
+                		<ul>
+                			<li><a href="">流行趋势</a></li>
+                			<li><a href="">MICHAEL’S MUST-HAVES</a></li>
+                			<li><a href="">SPOTLIGHT</a></li>
+                		</ul>
+                	   
+                	</li>
+                	<li><strong>JET SET</strong>
+                		<ul>
+                		    <li><a href="">旅行日志</a></li>
+                		    <li><a href="">CELEBRITIES</a></li>
+                		    <li><a href="">环游世界</a></li>
+                		</ul>
+                	</li>
+                </ul>
+                
+               </nav>
+               </div>
+	</div>
+	</div>
+	<div class="newfood">
+	<div class="container">
+	<div class="context-left col-lg-3 col-md-3">
+		<div class="collapse navbar-collapse">
+		<div><p>首页 > WOMEN | 女士 > 新品上市-女士</p></div>
+		<div class="pinglei">
+		<h4>品类</h4>
+            <li><a href="">查看全部</a></li>
+            <li><a href="">服饰</a></li>
+            <li><a href="">手袋</a></li>
+            <li><a href="">鞋履</a></li>
+            <li><a href="">腕表</a></li>
+            <li><a href="">配饰</a></li>
+            <li><a href="" style="letter-spacing: 2px;">MICHAEL KORS COLLECTION</a></li>
+       </div>
+       <div class="select-xilie">
+       	    <h4>甄选系列</h4>
+			    <li><a href="">新品上市</a></li>
+			    <li><a href="">甜美海蓝</a></li>
+				<li><a href="">MERCER 系列手袋</a></li>
+				<li><a href="">CUSTOM KORS 定制系列</a></li>
+				<li><a href="">KORS STYLE 单品推荐</a></li>
+       </div>
+       <div class="select">
+       	<h4>筛选</h4>
+       	<div class="size">
+       	    <p>尺码<i class=" size-plus" >+</i>
+	    	<i class=" size-jian" >-</i></p>
+       	    <div class="size-1">
+       	    <li><a href="">XXS</a></li>
+       	    <li><a href="">XS</a></li>
+       	    <li><a href="">S</a></li>
+       	    <li><a href="">M</a></li>
+       	    <li><a href="">L</a></li>
+       	    <li><a href="">均码</a></li>
+       	    <li><a href="">00</a></li>
+       	    <li><a href="">0</a></li>
+       	    <li><a href="">2</a></li> 
+       	    <li><a href="">4</a></li>
+       	    <li><a href="">5</a></li>
+       	    <li><a href="">5.5</a></li>
+       	    <li><a href="">6</a></li>
+       	    <li><a href="">6.5</a></li>
+       	    <li><a href="">7</a></li> 
+       	    <li><a href="">7.5</a></li>
+       	    <li><a href="">8</a></li>
+       	    <li><a href="">8.5</a></li>
+       	    <li><a href="">9</a></li>
+       	    <li><a href="">36</a></li>
+       	    <li><a href="">37</a></li> 
+       	    <li><a href="">38</a></li>
+       	    <li><a href="">10</a></li>  
+       	    </div>
+       </div>
+       </div>
+       <div class="clearfix"></div>
+       <div class="color">
+       	    <p style="margin-bottom:10px ;">颜色<i class="color-plus">+</i>
+		<i class="color-jian" >-</i></li>
+       	    <div class="color-1">
+       	    <li class="red"><a href="" style="background: red;" alt="红色"></a></li>
+       	    <li class="pink"><a href="" style="background: pink;" alt="粉色"></a></li>
+       	    <li class="orange"><a href="" style="background: orange;" alt="橙色"></a></li>
+       	    <li class="yellow"><a href="" style="background: yellow;" alt="黄色"></a></li>
+       	    <li class="black"><a href="" style="background: black;" alt="黑色"></a></li>
+       	    <li class="gray"><a href="" style="background: gray;" alt="灰色"></a></li>
+       	    <li class="brown"><a href="" style="background: brown;"alt="棕色"></a></li>
+       	    <li class="gold"><a href="" style="background: gold;" alt="金色"></a></li> 
+       	    <li class="silver"><a href="" style="background: silver;" alt="银色"></a></li>
+       	    <li class="purple"><a href="" style="background: purple;"alt="紫色"></a></li>
+       	    <li class="dodgerblue"><a href="" style="background: dodgerblue;" alt="蓝色"></a></li>
+       	    <li class="white"><a href="" style="background: white;" alt="白色"></a></li>
+       	    <li class="green"><a href="" style="background: green;" alt="绿色"></a></li>
+       	    <li class="navajowhite"><a href="" style="background: navajowhite;" alt="自然色"></a></li> 
+       </div>
+       </div>
+       <div class="clearfix"></div>
+       <div>
+       	    <p style="margin-bottom:10px ;">价格<i class="price-plus">+</i>
+		    <i class="price-jian" >-</i></li>
+		    <div class="price-1">
+       	    <li><a href=""><input type="checkbox">3000以下</a></li>
+       	    <li><a href=""><input type="checkbox">3000-5000</a></li>
+       	    <li><a href=""><input type="checkbox">5000-7000</a></li>
+       	    <li><a href=""><input type="checkbox">7000-9000</a></li>
+       	    <li><a href=""><input type="checkbox">9000以上</a></li>
+       </div>
+       </div>
+       </div>
+       </div>
+	  
+	   		    
+	   <div class="context-middle col-lg-9 col-md-9 col-sm-9 col-xs-12">
+	   	        <div class="lady-new collapse navbar-collapse"><li>新品上市-女士</li>
+	   	        	<li>视图<a style="color:#E0E0E0">2</a>
+	   	        		    <a href="">4</a>|&ensp;&ensp;排序
+	   	        		<select><option><li><a href="">默认排序</li></option>
+	   	        			    <option><li><a href="">新新品上市</li></option>
+	   	        			    <option><li><a href="">价格由低到高</li></option>
+	   	        			    <option><li><a href="">价格由高到低</li></option>
+	   	        		</select>
+	   	        		<p class="pull-right">共124个商品</p>
+	   	        	</li>
+	   	        </div>
+	   	   	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><a href="lady-detail.html"><img class="hangbag" src="img/context-1.jpg"></a>
+	   	   	    	<a href="lady-detail.html"><img class="hangbag2" src="img/context-2-1.jpg"></a>
+	   	   	    	
+	   	   	    	<div class="hangbag1 text-center">
+	   	   	    		
+	   	   	    		
+	   	   	    		<img src="img/context-1-1.jpg" style="height: 255px ;">
+	   	   	    		<a href="lady-detail.html">快速浏览</a>
+	   	   	    	</div>
+	   	   	    		
+	   	   	    <a href=""><p>MICHAEL MICHAEL</p> 
+	   	   	    	<p>KORSMercer 大号皮质手袋</p></a>
+	   	   	    	<p>¥4,200</p>
+	   	   	    <p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>	
+	   	   	    
+	   	   	    </div> 
+
+
+	   	   		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-2.jpg">
+	   	   		<a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Alina 皮质平跟鞋</p></a>
+	   	   	    	<p>¥1,800</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   		</div> 
+
+	   	   		<div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-3.jpg">
+	   	   		<a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Jet Set Travel 皮质翻盖名片夹</p></a>
+	   	   	    	<p>¥980</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   		</div> 
+
+	   	   	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-4.jpg">
+	   	   	    <a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Hamilton 小号皮质手提包</p></a>
+	   	   	    	<p>¥1,800</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   	    </div> 
+	   	   	   <!-- <div class="clearfix"></div>-->
+	   	   	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-5.jpg">
+	   	   	    <a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Sharon 皮质平跟鞋</p></a>
+	   	   	    	<p>¥1,400</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   	    </div> 
+	   	   	    
+	   	   	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-6.jpg">
+	   	   	    <a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Mercer 中号皮质斜挎包</p></a>
+	   	   	    	<p>¥3,500</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   	    </div> 
+	   	   	 
+	   	   	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-7.jpg">
+	   	   	    <a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Mercer 中号皮质斜挎包</p></a>
+	   	   	    	<p>¥3,500</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   	    </div> 
+
+	   	   	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-8.jpg">
+	   	   	    <a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Jet Set Travel 长款皮质翻盖钱夹</p></a>
+	   	   	    	<p>¥1,800</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   	    </div>
+	   	   	    <!--<div class="clearfix"></div>-->
+	   	   	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-5.jpg">
+	   	   	    <a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Sharon 皮质平跟鞋</p></a>
+	   	   	    	<p>¥1,400</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   	    </div> 
+	   	   	    
+	   	   	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-6.jpg">
+	   	   	    <a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Mercer 中号皮质斜挎包</p></a>
+	   	   	    	<p>¥3,500</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   	    </div> 
+	   	   	 
+	   	   	    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6"><img src="img/context-7.jpg">
+	   	   	    <a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Mercer 中号皮质斜挎包</p></a>
+	   	   	    	<p>¥3,500</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   	    </div> 
+
+	   	   	    <div class="col-lg-3 col-md-3 col-sm col-sm-6 col-xs-6"><img src="img/context-8.jpg">
+	   	   	    <a href=""><p>MICHAEL MICHAEL KORS</p> 
+	   	   	    	<p>Jet Set Travel 长款皮质翻盖钱夹</p></a>
+	   	   	    	<p>¥1,800</p>
+	   	   	    	<p class="btn3"><a class="btn1"></a>
+	   	   	       <a class="btn2"></a>
+	   	   	    </p>
+	   	   	    </div>
+	   	    </div>
+	   	    </div>
+	   </div>
+	   <div class="foot-left col-lg-6 col-md-6 col-sm-12">
+		<p class="glyphicon glyphicon-map-marker">精品店指南</p>
+		<p>从MICHAELKORS订阅最新资讯</p>
+		<input type="text" value="请输入你的电子邮箱..." class="emil col-lg-10 col-md-10 col-sm-10"/>
+		<input type="button" value="订阅" class="col-lg-1 col-md-1 col-sm-1 emil-button"/>
+		<div class="pull-left foot-text col-lg-12 col-md-6 col-sm-12">
+		<p>
+	    	<a href=""><img src="img/weibo.png"></a>
+	    	<a href=""><img src="img/weixin.png"></a>
+	    	<a href=""><img src="img/bofang.png"</a>
+	    	<a href=""><img src="img/lianxi.png">400-103-8882(周一至周日：早9点至晚10点)</a>
+	        <a href=""><img src="img/guwen.png">在线时尚顾问 | 微信时尚顾问</a>
+	    </p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+	</div> 
+	<div class="foot-right">
+	<div class="col-lg-2 col-md-6 col-sm-12">
+		
+	<li class="about"><a href="">关于我们</a><p class="navbar-toggle about-plus " href="">+</p>
+		<p class="navbar-toggle about-jian" href="">-</p></li>
+	<div class="about-context">	
+	<li><a href="">KORS CARES</a></li>
+	</div>	
+	</div>
+	
+	<div class="col-lg-2 col-md-6 col-sm-12 ">
+	<li class="account"><a href="">我的账户</a><p class="navbar-toggle account-plus" href="">+</p>
+		<p class="navbar-toggle account-jian" href="">-</p>
+		</li>
+		<div class="account-context">
+		<li><a href="">注册</a></li>
+		<li><a href="">账户首页</a></li>
+		<li><a href="">个人资料</a></li>
+		<li><a href="">地址簿</a></li>
+		<li><a href="">我的订单</a></li>
+		<li><a href="">我的心愿单</a></li>
+		<li><a href="">隐私条款</a></li>
+		</div>
+	</div>
+	<div class="col-lg-2 col-md-6 col-sm-12 ">
+	<li class="serive"><a href="">客户服务</a><p class="navbar-toggle serive-plus" href="">+</p>
+		<p class="navbar-toggle serive-jian" href="">-</p>
+		</li>
+		<div class="serive-context">
+		<li><a href="">FAQ</a></li>
+		<li><a href="">订单查询</a></li>
+		<li><a href="">退换贷政策</a></li>
+		<li><a href="">质量保证和维修</a></li>
+		<li><a href="">会员权益</a></li>
+		</div>
+		
+	
+	</div>
+	</div> 
+	<div class="clearfix"></div>
+	<div class="foot-bottom text-center">
+		<p><a href=""><img src="img/police.png"></a>沪公网安备31010602000358号 | 沪ICP备13005807 | © 2017 MICHAEL KORS<a href="" class="yinsi" >隐私条款</a></p>
+	</div>
+	
+	</body>
+</html>
+
+	</body>
+</html>
